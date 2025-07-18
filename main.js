@@ -376,7 +376,7 @@ for (let i = 0; i < KOI_COUNT; i++) {
   const group = i % NUM_GROUPS;
   const boid = new Boid(x, y, z, group);
   boids.push(boid);
-  loader.load('./koi_fish.glb', (gltf) => {
+  loader.load('/acuarioThreejs/koi_fish.glb', (gltf) => {
     const koi = gltf.scene;
     koi.scale.set(1.3, 1.3, 1.3);
     koi.position.copy(boid.position);
