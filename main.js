@@ -375,7 +375,7 @@ for (let i = 0; i < KOI_COUNT; i++) {
   const group = i % NUM_GROUPS;
   const boid = new Boid(x, y, z, group);
   boids.push(boid);
-  loader.load('/acuarioThreejs/koi_fish.glb', (gltf) => {
+  loader.load('./koi_fish.glb', (gltf) => {
     const koi = gltf.scene;
     koi.scale.set(1.3, 1.3, 1.3);
     koi.position.copy(boid.position);
@@ -396,7 +396,7 @@ let predatorBoid = null;
 let predatorTargetIndex = null;
 let predatorCooldown = 0;
 
-loader.load('/acuarioThreejs/koi_fish.glb', (gltf) => {
+loader.load('./koi_fish.glb', (gltf) => {
   const koi = gltf.scene;
   koi.scale.set(PREDATOR_SCALE, PREDATOR_SCALE, PREDATOR_SCALE);
   koi.traverse((child) => {
