@@ -1,8 +1,9 @@
-import * as THREE from 'https://unpkg.com/three@0.165.0/build/three.module.js';
-import { FontLoader } from 'https://unpkg.com/three@0.165.0/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'https://unpkg.com/three@0.165.0/examples/jsm/geometries/TextGeometry.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.165.0/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'https://unpkg.com/three@0.165.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'three'; 
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { AnimationMixer } from 'three'; 
 
 const canvas = document.querySelector('#c');
 const renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
